@@ -1,0 +1,12 @@
+
+.avatar-s{border-radius: 100%; display: inline-block;height: 30px;width: 30px;background-size: 100% 100%;background-position: 50% 50%;background-color: #ccc;}
+.avatar-m{border-radius: 100%; display: inline-block;height: 60px;width: 60px;background-size: 100% 100%;background-position: 50% 50%;background-color: #ccc;}
+.avatar-l{border-radius: 100%; display: inline-block;height: 90px;width: 90px;background-size: 100% 100%;background-position: 50% 50%;background-color: #ccc;}
+.icon-comment{display: inline-block;width: 18px;height: 19px;background-image: url(../img/icon-comment.png);}
+.icon-like{display: inline-block;width: 20px;height: 18px;background-image: url(../img/icon-like.png);}
+.icon-arrow{display: inline-block;width: 21px;height: 18px;background-image: url(../img/icon-arrow.png);}
+.icon-close{display: inline-block;width: 19px;height: 18px;background-image: url(../img/icon-close.png);}
+.icon-close-w{display: inline-block;width: 19px;height: 18px;background-image: url(../img/icon-close-w.png);}
+.icon-add{display: inline-block;width: 22px;height: 23px;background-image: url(../img/icon-add.png);}
+.avatar-xm{border-radius: 100%; display: inline-block;height: 40px;width: 40px;background-size: 100% 100%;background-position: 50% 50%;background-color: #ccc;}
+.icon-share{display: inline-block;width: 20px;height: 21px;background-image: url(../img/icon-share.png);}
