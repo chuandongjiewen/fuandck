@@ -27,19 +27,18 @@
 
 <script>
 
-import Plyr from 'plyr'
+// import Plyr from 'plyr'
 
 export default {
   name: 'Viewer',
 
   mounted () {
-    Plyr.setup()
+    // Plyr.setup()
   }
 }
 </script>
 
-<style src='plyr/dist/plyr.css'>
-</style>
 <style scoped>
+    @import '/static/css/plyr.css';
     @import '../assets/css/viewer.css';
 </style>
