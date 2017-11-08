@@ -6,7 +6,7 @@
   		<li class="img-item"><img src="http://img.ycg.qq.com/2501ea46-63ef-4e2e-8b16-cd08ece69749/preview" alt=""></li> -->
   		<!-- poster是视频还没播放是看到的图片 -->
   	<div class="player">
-      <video poster="/static/videos/oceans.png" controls>
+      <video poster="/static/videos/oceans.png" controls width="100%">
         <source src="/static/videos/oceans.mp4" type="video/mp4">
       </video>
   	</div>
