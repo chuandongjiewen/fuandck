@@ -1,25 +1,45 @@
 <template>
-  <div id="app">
-    <!-- <router-view/> -->
-    <video poster="/static/oceans.png" controls>
-      <source src="/static/oceans.mp4" type="video/mp4">
-    </video>
+  <div class="page-viewer">
+  	<button class="icon-close-w"></button>
+  	<ul class="img-list">
+  		<!-- <li class="img-item"><img src="http://img.ycg.qq.com/ab800f4a-a377-4e54-8334-ca3b18ac9b04/preview" alt=""></li>
+  		<li class="img-item"><img src="http://img.ycg.qq.com/2501ea46-63ef-4e2e-8b16-cd08ece69749/preview" alt=""></li> -->
+  		<!-- poster是视频还没播放是看到的图片 -->
+  	<div class="player">
+      <video poster="/static/videos/oceans.png" controls>
+        <source src="/static/videos/oceans.mp4" type="video/mp4">
+      </video>
+  	</div>
+  	</ul>
+  	<div class="article-detail">
+  		<h1 class="title">有用的老人</h1>
+  		<p class="detail-txt">大富科技挥洒的为人十分时快捷方式李赫然</p>
+  		<div class="user-info">
+  			<b class="avatar-s"></b>
+  			<div class="username"><p>erqeewr</p>	</div>
+  			<b class="icon-share"></b>
+  			<b class="icon-comment"></b>
+  			<b class="icon-like"></b>
+  		</div>
+  	</div>
   </div>
 </template>
 
 <script>
+
+import Plyr from 'plyr'
+
 export default {
-  name: 'Viewer'
+  name: 'Viewer',
+
+  mounted () {
+    Plyr.setup()
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style src='plyr/dist/plyr.css'>
+</style>
+<style scoped>
+    @import '../assets/css/viewer.css';
 </style>

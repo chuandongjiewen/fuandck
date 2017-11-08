@@ -10,12 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
+      name: 'index',
       component: Index
     },
     {
-      path: '/viewer',
-      name: 'Viewer',
+      path: '/viewer/:id',
+      name: 'viewer',
       component: Viewer
     }
   ]

@@ -1,15 +1,7 @@
 <template>
     <div id="index">
         <Navigator/>
-    	<section class="worklist">
-    		<ul id="j-work-list" class="mod-worklist">
-    			<WorkItem
-            v-for="item in items"
-            v-bind:key="item.id"
-            :cover="item.src">
-          </WorkItem>
-    		</ul>
-    	</section>
+        <WorkList />
     	<section class="recommend">
     		<h1 class="title">大咖推荐</h1>
     		<ul class="recommend-list">
@@ -44,25 +36,11 @@
 
 <script>
 import Navigator from '../components/Navigator.vue'
-import WorkItem from '../components/WorkItem.vue'
-
-import Ajax from '../libs/ajax'
+import WorkList from '../components/WorkList.vue'
 
 export default {
   name: 'Index',
-  components: { Navigator, WorkItem },
-  data () {
-    return {
-      items: []
-    }
-  },
-
-  mounted () {
-    var self = this
-    Ajax.getList(res => {
-      self.items = res.body
-    })
-  }
+  components: { Navigator, WorkList }
 }
 </script>
 

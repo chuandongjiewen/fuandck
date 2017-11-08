@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 var ajax = {
-  getList: function (successCallback, errorCallback) {
+  getWorkList: function (successCallback, errorCallback) {
     Vue.http.get('/static/data.json').then(successCallback, errorCallback)
   }
 }
