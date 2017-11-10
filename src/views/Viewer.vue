@@ -49,7 +49,8 @@ export default {
 }
 </script>
 
+<style href='/static/css/plyr.css'></style>
 <style scoped>
-    @import '/static/css/plyr.css';
+    /*@import '/static/css/plyr.css';*/
     @import '../assets/css/viewer.css';
 </style>
