@@ -68,6 +68,10 @@ app.use(devMiddleware)
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+// custom work path
+const workPath = path.posix.join('/', 'work')
+app.use(workPath, express.static('./work'))
+
 const uri = 'http://localhost:' + port
 
 var _resolve
