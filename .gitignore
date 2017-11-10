@@ -16,4 +16,5 @@ selenium-debug.log
 *.njsproj
 *.sln
 
-static/videos
+videos
+*.tar.gz

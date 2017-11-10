@@ -1,7 +1,7 @@
 
 @import 'reset.import.css';
 @import 'framework.import.css';
-.icon-close-w{position: fixed;left: 20px;top: 20PX;}
+.icon-close-w{position: fixed;left: 20px;top: 20PX; z-index: 100;}
 .article-detail{position: fixed;padding: 15px 13px;color: #fff;left: 0;right: 0;bottom: 0;background-color: rgba(0,0,0,0.2);}
 .article-detail .title{font-size: 24px;}
 .article-detail .detail-txt{font-size: 14px;position: relative;line-height: 40px;height: 40px;margin-bottom: 15px;opacity: 0.8;}
@@ -11,8 +11,7 @@
 .article-detail .username span{line-height: 30px;height: 30px;width: 100%;display: block;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
 .article-detail .icon-comment{margin: 0 15px;}
 
-.img-list{width: 100%;font-size: 0;}
-.img-list li{width: 100%;border-bottom: 1px #fff solid;}
-.img-list li img{width: 100%;}
+.player-window{width: 100%; height: 100%; font-size: 0; background: #262826; position: absolute; top: 0; left: 0;}
 
 .play{width: 128px;height: 128px;background-image: url(../img/btn-play@2x.png);background-size: 100% 100%;position: absolute;left: 50%;top: 40%;margin-left: -64px;z-index: 99;}
+.player{position: absolute; top: 20%; transform: translateY(-20%); left: 0;}
